@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AquaMate</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Inter,sans-serif;
+background:#07131f;
+color:white;
+line-height:1.7;
+
+}
+
+header{
+
+padding:80px 20px;
+text-align:center;
+background:
+linear-gradient(180deg,#0d1f33,#07131f);
+
+}
+
+header img{
+
+width:110px;
+margin-bottom:24px;
+
+}
+
+h1{
+
+font-size:56px;
+font-weight:800;
+
+}
+
+.subtitle{
+
+font-size:24px;
+color:#5fe7ff;
+margin:15px 0;
+
+}
+
+.description{
+
+max-width:760px;
+margin:auto;
+color:#b5c6d8;
+
+}
+
+.button{
+
+display:inline-block;
+margin-top:35px;
+padding:16px 34px;
+border-radius:50px;
+background:#00d9ff;
+color:#07131f;
+font-weight:700;
+text-decoration:none;
+
+}
+
+section{
+
+padding:70px 20px;
+
+}
+
+.container{
+
+max-width:1200px;
+margin:auto;
+
+}
+
+.section-title{
+
+text-align:center;
+font-size:38px;
+margin-bottom:50px;
+
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:24px;
+
+}
+
+.card{
+
+background:#102235;
+border-radius:20px;
+padding:28px;
+transition:.25s;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+box-shadow:0 20px 40px rgba(0,217,255,.15);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+color:#5fe7ff;
+
+}
+
+.card ul{
+
+padding-left:20px;
+
+}
+
+.card li{
+
+margin-bottom:8px;
+
+}
+
+.tech{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+
+}
+
+.tech span{
+
+padding:10px 20px;
+background:#102235;
+border-radius:30px;
+
+}
+
+footer{
+
+padding:50px;
+text-align:center;
+color:#8fa8c1;
+
+}
+
+.gallery{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+
+}
+
+.phone{
+
+background:#102235;
+height:450px;
+border-radius:28px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#5fe7ff;
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<img src="images/logo.png">
+
+<h1>AquaMate</h1>
+
+<div class="subtitle">
+Inteligentny asystent akwarysty
+</div>
+
+<p class="description">
+
+Monitoruj parametry, zarządzaj akwarium i podejmuj lepsze decyzje.
+AquaMate łączy dziennik pomiarów, kalkulatory, atlasy ryb i chorób oraz historię pielęgnacji w jednej aplikacji.
+
+</p>
+
+<a class="button" href="#">
+Google Play (wkrótce)
+</a>
+
+</header>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Najważniejsze funkcje
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🐠 Zarządzanie akwariami</h3>
+
+<ul>
+<li>wiele zbiorników</li>
+<li>historia pomiarów</li>
+<li>podmiany wody</li>
+<li>nawożenie</li>
+<li>zdjęcia</li>
+<li>notatki</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h3>📊 Monitoring parametrów</h3>
+
+<ul>
+<li>pH</li>
+<li>KH</li>
+<li>GH</li>
+<li>NO₂</li>
+<li>NO₃</li>
+<li>PO₄</li>
+<li>NH₄</li>
+<li>Fe</li>
+<li>K</li>
+<li>Mg</li>
+<li>Ca</li>
+<li>CO₂</li>
+<li>TDS</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h3>🧮 Kalkulatory</h3>
+
+<ul>
+<li>CO₂</li>
+<li>Podmiana wody</li>
+<li>Nawożenie</li>
+<li>Redfield</li>
+<li>RO</li>
+<li>Obsada</li>
+<li>Oświetlenie</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h3>🐟 Atlas ryb</h3>
+
+<ul>
+<li>zdjęcia</li>
+<li>wymagania</li>
+<li>parametry</li>
+<li>minimalny litraż</li>
+<li>trudność</li>
+<li>bezpieczeństwo dla krewetek</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h3>🩺 Atlas chorób</h3>
+
+<ul>
+<li>objawy</li>
+<li>leczenie</li>
+<li>kwarantanna</li>
+<li>preparaty</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h3>💾 Offline First</h3>
+
+<ul>
+<li>bez konta</li>
+<li>lokalna baza danych</li>
+<li>działa offline</li>
+<li>pełna prywatność</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+
+Galeria
+
+</h2>
+
+<div class="gallery">
+
+<div class="phone">
+Screenshot 1
+</div>
+
+<div class="phone">
+Screenshot 2
+</div>
+
+<div class="phone">
+Screenshot 3
+</div>
+
+<div class="phone">
+Screenshot 4
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+
+Technologie
+
+</h2>
+
+<div class="tech">
+
+<span>Kotlin Multiplatform</span>
+<span>Compose Multiplatform</span>
+<span>Room</span>
+<span>Koin</span>
+<span>Coil</span>
+<span>Material 3</span>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>AquaMate</h2>
+
+<p>
+
+Tworzona przez akwarystę dla akwarystów.
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 Krystian Makowski
+
+</p>
+
+</footer>
+
+</body>
+</html>
